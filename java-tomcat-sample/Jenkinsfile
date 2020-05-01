@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-				set JAVA_HOME =C:\Temenos\Temenos\R20\Infra\Java\Default
+				set JAVA_HOME ='C:\Temenos\Temenos\R20\Infra\Java\Default'
                 bat  "mvn -f java-tomcat-sample/pom.xml clean package"
             }
             post {
